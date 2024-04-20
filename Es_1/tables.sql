@@ -1,4 +1,4 @@
---Creare la tabella studente
+-- Creare la tabella studente
 CREATE TABLE
     studenti (
         matricola CHAR(9) PRIMARY KEY,
@@ -7,7 +7,7 @@ CREATE TABLE
         cf CHAR(16) NOT NULL UNIQUE
     );
 
---Creare la tabella professore
+-- Creare la tabella professore
 CREATE TABLE
     professori (
         matricola INT (4) PRIMARY KEY AUTO_INCREMENT,
@@ -17,7 +17,7 @@ CREATE TABLE
         settore VARCHAR(12) NOT NULL
     );
 
---Creare la tabella corso
+-- Creare la tabella corso
 CREATE TABLE
     corsi (
         codice CHAR(5) PRIMARY KEY,
@@ -27,7 +27,7 @@ CREATE TABLE
         FOREIGN KEY (professore) REFERENCES professori (matricola) ON DELETE SET NULL
     );
 
---Creare la tabella esame
+-- Creare la tabella esame
 CREATE TABLE
     esami (
         corso CHAR(5),
