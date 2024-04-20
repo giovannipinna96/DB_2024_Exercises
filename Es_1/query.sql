@@ -1,4 +1,4 @@
---Query 1: elencare tutti gli studenti iscritti ad ingegneria
+-- Query 1: elencare tutti gli studenti iscritti ad ingegneria
 SELECT
     *
 FROM
@@ -20,7 +20,7 @@ WHERE
         OR cf LIKE "_________7%"
     );
 
---Query 2 alternativa 1
+-- Query 2 alternativa 1
 SELECT
     *
 FROM
@@ -29,7 +29,7 @@ WHERE
     matricola LIKE "IN%"
     AND SUBSTRING(cf, 10, 1) IN ("4", "5", "6", "7");
 
---Query 2 alternativa 2
+-- Query 2 alternativa 2
 SELECT
     *
 FROM
@@ -60,7 +60,7 @@ SET
 
 ALTER TABLE studenti ADD CHECK (genere IN ("M", "F"));
 
---Query 2: dopo la modifica del DB
+-- Query 2: dopo la modifica del DB
 SELECT
     *
 FROM
@@ -96,7 +96,7 @@ GROUP BY
 HAVING
     n_lodi >= 2;
 
---Query 5: media ponderata per uno specifico studente (in questo caso per la matricola "IN0500273")
+-- Query 5: media ponderata per uno specifico studente (in questo caso per la matricola "IN0500273")
 SELECT
     e.studente,
     SUM(e.voto * c.cfu) / SUM(c.cfu) AS media_ponderata
@@ -108,7 +108,7 @@ WHERE
 GROUP BY
     e.studente;
 
---Query 6: trovare lo studente più performante in ogni corso
---Query 7: calcolare la media dei voti per ogni corso
---Query 8: calcolare il totale di cfu ottenuti da ogni studente
---Query 9: lista degli studenti che hanno fatto un esame in ogni settore
+-- Query 6: trovare lo studente più performante in ogni corso
+-- Query 7: calcolare la media dei voti per ogni corso
+-- Query 8: calcolare il totale di cfu ottenuti da ogni studente
+-- Query 9: lista degli studenti che hanno fatto un esame in ogni settore
