@@ -1,4 +1,4 @@
---Inserire degli studenti
+-- Inserire degli studenti
 INSERT INTO
     studenti
 VALUES
@@ -15,7 +15,7 @@ VALUES
         "BNCLRD99A12L424Y"
     );
 
---Inserire dei professori
+-- Inserire dei professori
 INSERT INTO
     professori (nome, cognome, cf, settore)
 VALUES
@@ -32,7 +32,7 @@ VALUES
         "ING-INF/05"
     );
 
---Inseriamo dei corsi
+-- Inseriamo dei corsi
 INSERT INTO
     corsi
 VALUES
@@ -43,7 +43,7 @@ INSERT INTO
 VALUES
     ("511SM", "Natural language processing", 6);
 
---Inseriamo degli esami
+-- Inseriamo degli esami
 INSERT INTO
     esami
 VALUES
