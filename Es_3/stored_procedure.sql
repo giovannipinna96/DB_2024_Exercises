@@ -1,0 +1,7 @@
+-- Stored procedure che scriva in una variabile passata il monte ore
+-- di un dato docente. Lanciare un errore se il docente non esiste.
+-- ???
+-- For test
+-- CALL MonteOre(41, @ore);
+-- SELECT @ore;
+-- SHOW CREATE PROCEDURE MonteOre;
